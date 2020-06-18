@@ -1,7 +1,7 @@
-import type { typeElement } from "../data/typeElement";
-import { initElement } from "../data/typeElement";
+import type { typeCoreElement} from "../libraryData/typeCoreElement";
+import { initElement } from "../libraryData/typeCoreElement";
 export type typeCoreElementImage = {
-    ...typeElement,
+    ...typeCoreElement,
 
     images: ?Array<{
         src: string,

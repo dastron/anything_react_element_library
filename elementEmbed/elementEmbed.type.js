@@ -1,7 +1,7 @@
-import type { typeElement } from "../data/typeElement";
-import { initElement } from "../data/typeElement";
+import type { typeCoreElement} from "../libraryData/typeCoreElement";
+import { initElement } from "../libraryData/typeCoreElement";
 export type typeCoreElementText = {
-    ...typeElement,
+    ...typeCoreElement,
     content: string,
     embed: {
       id: string, //ID for Generated Embed

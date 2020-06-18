@@ -1,7 +1,7 @@
 // @flow
 import React from 'react'
 import { Segment } from 'semantic-ui-react'
-import type { typeElementMarkdownEditor } from './typeElementMarkdownEditor'
+import type { typeCoreElementMarkdownEditor } from './typeCoreElementMarkdownEditor'
 import ReactMarkdown from 'react-markdown'
 import { Form } from 'semantic-ui-react'
 import { Grid } from 'semantic-ui-react'
@@ -10,7 +10,7 @@ import CodeBlock from '../elementJavascript/CodeBlock.react';
 import { Popup } from 'semantic-ui-react';
 import ElementMarkdown from '../elementText/ElementMarkdown.react';
 
-const CoreElementMarkdownEditor = (props: typeElementMarkdownEditor) => {
+const CoreElementMarkdownEditor = (props: typeCoreElementMarkdownEditor) => {
   const [markdown, setMarkdown] = useState(props.initialMarkdown)
 
   function onChange(e) {

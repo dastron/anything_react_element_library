@@ -1,7 +1,7 @@
 // @flow
 import React from 'react'
 import { Segment } from 'semantic-ui-react'
-import type { typeElementPython } from './typeElementPython'
+import type { typeCoreElementPython } from './typeCoreElementPython'
 import ReactMarkdown from 'react-markdown'
 import { Form } from 'semantic-ui-react'
 import { Grid } from 'semantic-ui-react'
@@ -13,7 +13,7 @@ import { Embed } from 'semantic-ui-react'
 import { Header } from 'semantic-ui-react'
 import { Icon } from 'semantic-ui-react';
 
-const CoreElementPython = (props: typeElementPython) => {
+const CoreElementPython = (props: typeCoreElementPython) => {
   const [markdown, setMarkdown] = useState(props.initialCode)
   const [runCode, setRunCode] = useState(false)
   function onChange(e) {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Form, Item, Segment, Button } from 'semantic-ui-react'
 
-import type { typeElementLibrary } from "../../elements/enumElements";
+import type { typeCoreElementLibrary } from "../../elements/enumElements";
 import { ELEMENT_LIBRARY } from "../../elements/enumElements";
 // import _ from "underscore";
 

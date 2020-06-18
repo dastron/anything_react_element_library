@@ -2,7 +2,7 @@
 import React, { Component } from 'react'
 import { Form, Item, Segment, Header, Grid } from 'semantic-ui-react';
 import type { typeEventOnChange } from "../../data/typeEventOnChange";
-import type { typeElement } from "../../data/typeElement";
+import type { typeCoreElement} from "../libraryData/typeCoreElement";
 import type { typeElementLibrary } from "../../elements/enumElements";
 import { ELEMENT_LIBRARY } from "../../elements/enumElements";
 import remark from 'remark';
@@ -16,7 +16,7 @@ type state = {
 }
 
 type props = {
-  ...typeElement,
+  ...typeCoreElement,
   content: string,
   name?: string,
   label?: string,

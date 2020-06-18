@@ -1,7 +1,7 @@
 // @flow
 import React, { Component } from 'react'
 import { Form, Item, Segment, Header, Grid } from 'semantic-ui-react'
-import type { typeElement } from '../../data/typeElement'
+import type { typeCoreElement} from '../libraryData/typeCoreElement'
 import ReactMarkdown from 'react-markdown'
 import CodeBlock from '../helperCode/CodeBlock.react';
 import CodeRenderer from '../helperCode/CodeRenderer.react';
@@ -11,7 +11,7 @@ type state = {
 }
 
 type props = {
-  ...typeElement,
+  ...typeCoreElement,
   initialCode: string,
   name?: string,
   label?: string,
