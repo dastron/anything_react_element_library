@@ -1,4 +1,4 @@
-# anything_react_element_library
+# Anything React Element Library
 The core interactive elements for the Anything React platform. These components enable interactive learning experiences, simulation, and exploration.
 
 
