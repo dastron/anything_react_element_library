@@ -123,7 +123,6 @@ export function ElementLibraryInputUtil(
   onChange: any
 ) {
   const key = getElementLibrary({ type: element_type })
-  // console.log(element_type)
 
   switch (key) {
     case ELEMENT_LIBRARY.TEXT:
@@ -154,12 +153,4 @@ export function ElementLibraryInputUtil(
       break
   }
 }
-// namespace Mode {
-//     export function toString(mode: Mode): string {
-//         return Mode[mode];
-//     }
 
-//     export function parse(mode: string): Mode {
-//         return Mode[mode];
-//     }
-// }
