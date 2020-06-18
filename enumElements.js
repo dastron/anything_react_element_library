@@ -19,6 +19,8 @@ import ElementMarkdownEditorInput from './elementMarkdownEditor/elementMarkdownE
 import ElementJavascriptInput from './elementJavascript/elementJavascriptInput.react';
 import ElementPythonInput from './elementPython/elementPythonInput.react';
 import CoreElementPython from './elementPython/elementPython.react';
+import type { typeEventOnChange } from '../data/typeEventOnChange';
+import type { typeCoreElement } from './libraryData/typeCoreElement';
 
 export const ELEMENT_LIBRARY = Object.freeze({
   CARD: 'coreElementCard',
@@ -119,8 +121,8 @@ export function ElementLibraryUtil(
 
 export function ElementLibraryInputUtil(
   element_type: typeElementLibrary,
-  element: any,
-  onChange: any
+  element: typeCoreElement | any, // TODO - Add a flow type union
+  onChange: typeEventOnChange
 ) {
   const key = getElementLibrary({ type: element_type })
 
